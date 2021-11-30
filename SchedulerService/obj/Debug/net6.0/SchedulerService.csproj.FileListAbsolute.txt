@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\SchedulerService.deps.json
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\SchedulerService.dll
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\ref\SchedulerService.dll
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\SchedulerService.pdb
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\SchedulerService\bin\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.csproj.CopyComplete
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.dll
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\ref\SchedulerService.dll
+C:\Users\user\source\repos\HealthChecker\SchedulerService\obj\Debug\net6.0\SchedulerService.pdb

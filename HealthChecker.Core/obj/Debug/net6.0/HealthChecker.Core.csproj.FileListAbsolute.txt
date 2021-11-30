@@ -15,3 +15,9 @@ C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\obj\Debug\net6.0\ref
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\obj\Debug\net6.0\HealthChecker.Core.pdb
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\HealthChecker.DataContext.dll
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\HealthChecker.DataContext.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\ScheduleJobManager.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\SchedulerService.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\ScheduleJobManager.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\SchedulerService.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Core\bin\Debug\net6.0\HealthLifeCheckService.pdb

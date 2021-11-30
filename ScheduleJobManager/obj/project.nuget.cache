@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vBCxK6ZJ7byC54h1v7HNKqVi5A5Bp01QvZgI4nuGxCwKLX/qwrQbYBOwSG2pVVcCEDJbfgQB0H/O1KpyBj+9cg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

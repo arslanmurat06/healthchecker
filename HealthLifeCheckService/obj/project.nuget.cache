@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zb3TrN2po2UpwcvPEF5+yEMtJp5j0yhFRDdd0t5tsmdou2sqPVjSEEqdd7b50V9HryTdGouAY1fJarRIIq8eHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

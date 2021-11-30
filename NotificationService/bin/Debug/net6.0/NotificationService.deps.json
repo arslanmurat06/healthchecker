@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NotificationService/1.0.0": {
+        "dependencies": {
+          "HealthChecker.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "NotificationService.dll": {}
+        }
+      },
+      "HealthChecker.Contracts/1.0.0": {
+        "runtime": {
+          "HealthChecker.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NotificationService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HealthChecker.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

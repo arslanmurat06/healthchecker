@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\ScheduleJobManager.deps.json
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\ScheduleJobManager.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\ref\ScheduleJobManager.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\ScheduleJobManager.pdb
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\bin\Debug\net6.0\HealthLifeCheckService.pdb
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.csproj.CopyComplete
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ref\ScheduleJobManager.dll
+C:\Users\user\source\repos\HealthChecker\ScheduleJobManager\obj\Debug\net6.0\ScheduleJobManager.pdb

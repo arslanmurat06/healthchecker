@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\bin\Debug\net6.0\HealthLifeCheckService.deps.json
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\bin\Debug\net6.0\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\bin\Debug\net6.0\ref\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\bin\Debug\net6.0\HealthLifeCheckService.pdb
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\ref\HealthLifeCheckService.dll
+C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.pdb

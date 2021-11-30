@@ -27,6 +27,10 @@
     <ProjectReference Include="..\HealthChecker.Contracts\HealthChecker.Contracts.csproj" />
     <ProjectReference Include="..\HealthChecker.Core\HealthChecker.Core.csproj" />
     <ProjectReference Include="..\HealthChecker.DataContext\HealthChecker.DataContext.csproj" />
+    <ProjectReference Include="..\HealthLifeCheckService\HealthLifeCheckService.csproj" />
+    <ProjectReference Include="..\NotificationService\NotificationService.csproj" />
+    <ProjectReference Include="..\ScheduleJobManager\ScheduleJobManager.csproj" />
+    <ProjectReference Include="..\SchedulerService\SchedulerService.csproj" />
   </ItemGroup>
 
 </Project>
