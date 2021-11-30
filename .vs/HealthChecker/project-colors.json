@@ -25,7 +25,17 @@
       "ProjectGuid": "9258e9e4-5b6d-4d1e-b07a-394d0d943060",
       "DisplayName": "HealthChecker.Contracts",
       "ColorIndex": 3
+    },
+    "2fd08aa1-50ab-4ee9-a448-d4dd2bd0555f": {
+      "ProjectGuid": "2fd08aa1-50ab-4ee9-a448-d4dd2bd0555f",
+      "DisplayName": "HealthChecker.DataContext",
+      "ColorIndex": 4
+    },
+    "8aaf9326-7a01-46b3-be30-11b0a7397942": {
+      "ProjectGuid": "8aaf9326-7a01-46b3-be30-11b0a7397942",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

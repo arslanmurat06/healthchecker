@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecker.Core", "Healt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecker.Contracts", "HealthChecker.Contracts\HealthChecker.Contracts.csproj", "{9258E9E4-5B6D-4D1E-B07A-394D0D943060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecker.DataContext", "HealthChecker.DataContext\HealthChecker.DataContext.csproj", "{2FD08AA1-50AB-4EE9-A448-D4DD2BD0555F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthChecker.DataContext", "HealthChecker.DataContext\HealthChecker.DataContext.csproj", "{2FD08AA1-50AB-4EE9-A448-D4DD2BD0555F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8AAF9326-7A01-46B3-BE30-11B0A7397942}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
