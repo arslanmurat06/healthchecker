@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\HealthChecker\JobRunner\bin\Debug\net6.0\JobRunner.deps.json
+C:\Users\user\source\repos\HealthChecker\JobRunner\bin\Debug\net6.0\JobRunner.dll
+C:\Users\user\source\repos\HealthChecker\JobRunner\bin\Debug\net6.0\ref\JobRunner.dll
+C:\Users\user\source\repos\HealthChecker\JobRunner\bin\Debug\net6.0\JobRunner.pdb
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.dll
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\ref\JobRunner.dll
+C:\Users\user\source\repos\HealthChecker\JobRunner\obj\Debug\net6.0\JobRunner.pdb

@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.DataContext.deps.json
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.DataContext.runtimeconfig.json
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.DataContext.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\ref\HealthChecker.DataContext.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.DataContext.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\ref\HealthChecker.DataContext.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.genruntimeconfig.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\bin\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.DataContext\obj\Debug\net6.0\HealthChecker.DataContext.csproj.CopyComplete

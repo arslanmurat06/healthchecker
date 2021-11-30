@@ -1,0 +1,72 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="login-form">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+               <div class="mb-3 text-center title">
+            <span>Create New Acccount</span>
+        </div>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Username" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="New Password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password Again" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+   
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    body {
+        background: #f7f7f7;
+    }
+    .login-form {
+        width: 340px;
+        margin: 100px auto;
+        font-size: 15px;
+       
+    }
+    .login-form form {
+        margin-bottom: 15px;
+        background: #ffffff;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #1b6ec2;
+        border-color: #1861ac;
+    }
+    .login-form .title {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: verdana;
+    }
+
+      .login-form .form-group {
+        padding:10px;
+    }

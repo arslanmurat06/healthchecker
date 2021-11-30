@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a3560b3e-6e8d-4e53-8d28-7012a222ee2f": {
+      "ProjectGuid": "a3560b3e-6e8d-4e53-8d28-7012a222ee2f",
+      "DisplayName": "HealthCheckerWeb",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "66f6ea73-bc9d-4279-aeb2-26c9f1594117": {
+      "ProjectGuid": "66f6ea73-bc9d-4279-aeb2-26c9f1594117",
+      "DisplayName": "JobRunner",
+      "ColorIndex": 1
+    },
+    "19e19a7e-3df0-45fb-8144-b59e8e2304dd": {
+      "ProjectGuid": "19e19a7e-3df0-45fb-8144-b59e8e2304dd",
+      "DisplayName": "HealthChecker.Core",
+      "ColorIndex": 2
+    },
+    "9258e9e4-5b6d-4d1e-b07a-394d0d943060": {
+      "ProjectGuid": "9258e9e4-5b6d-4d1e-b07a-394d0d943060",
+      "DisplayName": "HealthChecker.Contracts",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

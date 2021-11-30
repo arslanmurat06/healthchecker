@@ -1,0 +1,51 @@
+﻿@using HealthChecker.Contracts.DTOs
+@using HealthChecker.Contracts
+@model JobDTO
+
+<form method="post" asp-action="Edit">
+
+
+	<div class ="container p-3">
+
+			<h2 class="text-primary">
+				Update Job
+			</h2>
+
+    <div class="row pt-4">
+        <div  class="mb-3">
+            <label asp-for="Name" style="padding-bottom:5px">Job Name</label>
+			<input asp-for="Name" class ="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div  class="mb-3">
+            <label asp-for="TargetURL" style="padding-bottom:5px">Target URL</label>
+				<input asp-for="TargetURL" class ="form-control"/>
+                 <span asp-validation-for="TargetURL" class="text-danger"></span>
+        </div>
+    </div>
+
+	 <div class="row pt-4">
+        <div class="col-2">
+            <label asp-for="TriggerInterval" style="padding-bottom:5px">Job Interval</label>
+			<input asp-for="TriggerInterval" class ="form-control"/>
+             <span asp-validation-for="TriggerInterval" class="text-danger"></span>
+        </div>
+
+		  <div class="col-4">
+            <label asp-for="TriggerType" style="padding-bottom:5px">Interval Type</label>
+			<select class="form-control" asp-for="TriggerType"  asp-items="Html.GetEnumSelectList<IntervalEnum>()">
+				<option value"">Please choose interval type</option>
+			</select>
+             <span asp-validation-for="TriggerType" class="text-danger"></span>
+        </div>
+    </div>
+
+	<div class="row pt-4">
+        <div class="col-6">
+           <button type="submit" class="btn btn-primary style="width:150px">Update</button>
+		<a asp-controller="Jobs" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to jobs</a>
+        </div>
+    </div>
+</div>
+
+</form>

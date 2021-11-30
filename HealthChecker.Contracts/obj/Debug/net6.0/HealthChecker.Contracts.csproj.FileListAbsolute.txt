@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\bin\Debug\net6.0\HealthChecker.Contracts.deps.json
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\bin\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\bin\Debug\net6.0\ref\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\bin\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\ref\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.csproj.AssemblyReference.cache

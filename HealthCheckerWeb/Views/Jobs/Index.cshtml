@@ -1,0 +1,79 @@
+﻿@using HealthChecker.Contracts.DTOs
+@model IEnumerable<JobDTO>
+
+@{
+    ViewData["Title"] = "Jobs Page";
+
+}
+
+
+
+<div class ="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Job Details</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Jobs" asp-action="Create" class="btn btn-primary"> 
+                <i class ="bi bi-plus-circle"></i> &nbsp; Add New Job
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class = "table table-bordered table-striped" styled="width:100%">
+
+<thead>
+    <tr>
+        <th>
+            Job Name
+        </th>
+        <th>
+            Target URL
+        </th>
+        <th>
+            Interval
+        </th>
+        <th>
+            Interval Type
+        </th>
+        <th></th>
+    </tr>
+</thead>    
+
+<tbody>
+        @if(Model != null)
+        {
+            foreach(var job in Model)
+        {
+            <tr>
+                <td>
+                    @job.Name
+                </td>
+
+                <td>
+                    @job.TargetURL
+                </td>
+
+                <td>
+                    @job.TriggerInterval
+                </td>
+
+                <td>
+                   @job.TriggerType
+                </td>
+
+                <td >
+                    <div class="w-50 btn-group text-end" role="group"  >
+                    <a asp-controller="Jobs" asp-action="Edit" asp-route-id="@job.Id" class="btn btn-primary mx-2"><i class="bi bi-pencil-square"></i></a>
+                    <a asp-controller="Jobs" asp-action="Delete" asp-route-id="@job.Id" class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i></a>
+                     </div>
+                </td>
+            </tr>
+        }
+        }
+       
+    </tbody>
+
+</table>
+
