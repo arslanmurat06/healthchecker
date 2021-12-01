@@ -47,7 +47,7 @@ namespace SchedulerService
                 "/hangfire", new DashboardOptions
                 {
                     DashboardTitle = "Health Checker Hangfire Dashboard",
-                    AppPath = "https://github.com/arslanmurat06", 
+                    AppPath = "https://localhost:44338/jobs", 
                     Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{
             User = hangfireSettings.Username,
             Pass = hangfireSettings.Password

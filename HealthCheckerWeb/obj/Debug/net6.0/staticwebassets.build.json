@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6nKyw+p2tsMO5x12ywLctc0JQsFcDy752bRNL1I4D08=",
+  "Hash": "hR96H+5St5+9SlWUkxVO2Z0RTVEfxSIRKa3OCnkzmZc=",
   "Source": "HealthCheckerWeb",
   "BasePath": "_content/HealthCheckerWeb",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthCheckerWeb\\wwwroot\\images\\schedule.jpg",
+      "SourceId": "HealthCheckerWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthCheckerWeb\\wwwroot\\",
+      "BasePath": "_content/HealthCheckerWeb",
+      "RelativePath": "images/schedule.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\schedule.jpg"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthCheckerWeb\\wwwroot\\js\\site.js",
