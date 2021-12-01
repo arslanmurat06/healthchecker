@@ -12,7 +12,7 @@ namespace SchedulerService
 {
     public class ScheduleJobManager<T> : IScheduleJobManager<T> where T : IJob
     {
-        public void AddOrUpdateJob(string jobName, int jobId, int interval, IntervalEnum intervalType)
+        public void AddJob(string jobName, int jobId, int interval, IntervalEnum intervalType)
         {
             RecurringJob.AddOrUpdate<T>(jobName, j => j.Process(jobId), GetCronFromInterval(interval, intervalType));
         }
@@ -20,6 +20,12 @@ namespace SchedulerService
         public void DeleteJob(string jobName)
         {
             RecurringJob.RemoveIfExists(jobName);
+        }
+
+        public void UpdateJob(string oldJobName, string jobName, int jobId, int interval, IntervalEnum intervalType)
+        {
+            RecurringJob.RemoveIfExists(oldJobName);
+            RecurringJob.AddOrUpdate<T>(jobName, j => j.Process(jobId), GetCronFromInterval(interval, intervalType));
         }
 
         private string GetCronFromInterval(int interval, IntervalEnum intervalType)

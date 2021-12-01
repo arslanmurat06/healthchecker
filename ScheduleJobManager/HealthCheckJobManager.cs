@@ -39,7 +39,10 @@ namespace ScheduleJobManager
 
             if (!healtResult)
                 await _notificationService.Notify();
-            
+
+            job.LastRunTime = DateTime.UtcNow;
+
+            await _jobRepository.UpdateJob(job);
         }
     }
 }
