@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleJobManager", "Sched
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{D1362F41-8B11-4D31-AFDE-555EAD51C071}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecker.Tests", "HealthChecker.Tests\HealthChecker.Tests.csproj", "{D9195B4D-AA1B-4B6F-A0CE-EED20C7636A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{D1362F41-8B11-4D31-AFDE-555EAD51C071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1362F41-8B11-4D31-AFDE-555EAD51C071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1362F41-8B11-4D31-AFDE-555EAD51C071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9195B4D-AA1B-4B6F-A0CE-EED20C7636A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9195B4D-AA1B-4B6F-A0CE-EED20C7636A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9195B4D-AA1B-4B6F-A0CE-EED20C7636A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9195B4D-AA1B-4B6F-A0CE-EED20C7636A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
