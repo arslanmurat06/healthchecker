@@ -25,7 +25,7 @@ namespace HealthChecker.Core.Services
         public async Task<ResponseDTO<JobDTO>> AddJob(JobDTO job, string userName)
         {
             var result = await _jobRepository.AddJob(job, userName);
-             _scheduleManager.AddOrUpdateJob(result.Name, result.Id, result.TriggerInterval, result.TriggerType);
+             _scheduleManager.AddJob(result.Name, result.Id, result.TriggerInterval, result.TriggerType);
 
             return new ResponseDTO<JobDTO>(result);
 
@@ -58,9 +58,13 @@ namespace HealthChecker.Core.Services
 
         public async Task<ResponseDTO<JobDTO>> UpdateJob(JobDTO job, string userName)
         {
+
+            var oldJob = await _jobRepository.GetJob(job.Id);
+            string oldJobName = oldJob.Name;
+
             var result = await _jobRepository.UpdateJob(job, userName);
 
-            _scheduleManager.AddOrUpdateJob(job.Name, job.Id, job.TriggerInterval, job.TriggerType);
+            _scheduleManager.UpdateJob(oldJobName, result.Name, result.Id, result.TriggerInterval, result.TriggerType);
 
             return new ResponseDTO<JobDTO>(result);
         }

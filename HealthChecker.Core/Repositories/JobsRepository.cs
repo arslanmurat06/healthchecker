@@ -51,26 +51,29 @@ namespace HealthChecker.Core.Repositories
         }
 
 
-        public async Task<JobDTO> UpdateJob(JobDTO job, string userName)
+        public async Task<JobDTO> UpdateJob(JobDTO job, string userName = null)
         {
+            IdentityUser _user = null;
 
             var jobEntity = await _context.Jobs.AsNoTracking().FirstAsync(j=>j.Id ==job.Id);
-
-            var user = await _context.Users.FirstAsync(u => u.UserName == userName);
 
             if (jobEntity == null)
             {
                 throw new CustomException("Job could not be found to update ");
             }
 
+            if (userName != null)
+                _user = await _context.Users.FirstAsync(u => u.UserName == userName);
+
             jobEntity.Name = job.Name;
             jobEntity.TargetURL = job.TargetURL;
             jobEntity.TriggerInterval = job.TriggerInterval;
             jobEntity.TriggerType = job.TriggerType;
 
-            jobEntity.CreatedUser = user.UserName;
-            jobEntity.LastEditUser = user.UserName;
+            jobEntity.CreatedUser = _user !=null ?  _user.UserName : jobEntity.CreatedUser;
+            jobEntity.LastEditUser = _user !=null ? _user.UserName : jobEntity.LastEditUser;
             jobEntity.LastEdit = DateTime.UtcNow;
+            jobEntity.LastRunTime = job.LastRunTime;
 
             _context.Update(jobEntity);
             var result = await _context.SaveChangesAsync();
@@ -109,11 +112,6 @@ namespace HealthChecker.Core.Repositories
                                          .Where(j=>j.UserId == user.Id && j.Tombstone == null)
                                          .Select(j => _mapper.Map<JobDTO>(j))
                                          .ToListAsync();
-            if (!jobs.Any())
-            {
-                throw new CustomException($"No job added yet");
-            }
-
             return jobs;
         }
 

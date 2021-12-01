@@ -37,6 +37,10 @@
         <th>
             Interval Type
         </th>
+
+         <th>
+            Last Run Time
+        </th>
         <th></th>
     </tr>
 </thead>    
@@ -62,6 +66,15 @@
                 <td>
                    @job.TriggerType
                 </td>
+
+                   @if (job.LastRunTime != null)
+                   {
+                      <td>@TimeZoneInfo.ConvertTimeFromUtc(job.LastRunTime ?? DateTime.UtcNow, TimeZoneInfo.Local)</td>
+                   }
+                   else
+                   {
+                      <td>&nbsp</td>
+                   }
 
                 <td >
                     <div class="w-50 btn-group text-end" role="group"  >
