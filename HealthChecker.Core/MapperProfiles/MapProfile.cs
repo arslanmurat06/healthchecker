@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using HealthChecker.Contracts.DTOs;
 using HealthChecker.DataContext.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace HealthChecker.Core.MapperProfiles
 {
@@ -14,6 +15,7 @@ namespace HealthChecker.Core.MapperProfiles
         public MapProfile()
         {
             CreateMap<Job, JobDTO>().ReverseMap();
+            CreateMap<IdentityUser, UserDTO>();
         }
     }
 }

@@ -9,4 +9,3 @@ C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.dll
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\ref\HealthChecker.Contracts.dll
 C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.pdb
-C:\Users\user\source\repos\HealthChecker\HealthChecker.Contracts\obj\Debug\net6.0\HealthChecker.Contracts.csproj.AssemblyReference.cache

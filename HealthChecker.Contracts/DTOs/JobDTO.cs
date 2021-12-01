@@ -23,7 +23,7 @@ namespace HealthChecker.Contracts.DTOs
         [Required]
         public int TriggerInterval { get; set; }
 
-        public string UserId { get; set; }
+        public string? UserId { get; set; }
         public DateTime? LastRunTime { get; set; }
         public DateTime? Created { get; set; }
         public string? CreatedUser { get; set; }

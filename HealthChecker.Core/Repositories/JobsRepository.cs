@@ -63,7 +63,7 @@ namespace HealthChecker.Core.Repositories
             }
 
             if (userName != null)
-                _user = await _context.Users.FirstAsync(u => u.UserName == userName);
+                _user =  await _context.Users.FirstAsync(u => u.UserName == userName);
 
             jobEntity.Name = job.Name;
             jobEntity.TargetURL = job.TargetURL;

@@ -1,4 +1,5 @@
 ﻿
+using HealthChecker.Contracts.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
@@ -32,11 +33,11 @@ namespace HealthCheckerWeb.Middlewares
             }
         }
 
-        private Task HandleException(HttpContext context, Exception ex)
+        private async Task HandleException(HttpContext context, Exception ex)
         {
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
             context.Response.ContentType = "application/json";
-            return context.Response.WriteAsync(new ResponseDTO(new ErrorDTO {Message = ex.Message }).ToString());
+            await context.Response.WriteAsync(new ResponseDTO(new ErrorDTO(ex.Message )).ToString());
         }
     }
 }

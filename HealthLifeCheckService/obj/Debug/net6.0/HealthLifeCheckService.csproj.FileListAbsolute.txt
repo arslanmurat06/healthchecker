@@ -9,4 +9,3 @@ C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0
 C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.dll
 C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\ref\HealthLifeCheckService.dll
 C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.pdb
-C:\Users\user\source\repos\HealthChecker\HealthLifeCheckService\obj\Debug\net6.0\HealthLifeCheckService.csproj.AssemblyReference.cache

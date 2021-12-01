@@ -25,6 +25,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IJobsRepository, JobsRepository>();
 builder.Services.AddTransient<IJobService, JobService>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<INotificationService, MailService>();
 
 builder.Services.AddAutoMapper(cfg => { cfg.AddCollectionMappers(); }, typeof(MapProfile));

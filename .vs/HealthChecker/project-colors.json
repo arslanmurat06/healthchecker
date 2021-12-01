@@ -35,7 +35,32 @@
       "ProjectGuid": "8aaf9326-7a01-46b3-be30-11b0a7397942",
       "DisplayName": "Solution Items",
       "ColorIndex": 5
+    },
+    "72bdc9e0-cb74-4a15-8f8a-e54506b3f589": {
+      "ProjectGuid": "72bdc9e0-cb74-4a15-8f8a-e54506b3f589",
+      "DisplayName": "SchedulerService",
+      "ColorIndex": 6
+    },
+    "b685d7f5-e70f-4d4f-ad75-5f0ea02d0f8c": {
+      "ProjectGuid": "b685d7f5-e70f-4d4f-ad75-5f0ea02d0f8c",
+      "DisplayName": "HealthLifeCheckService",
+      "ColorIndex": 7
+    },
+    "199521f4-68fa-4983-8791-ef22e1a36124": {
+      "ProjectGuid": "199521f4-68fa-4983-8791-ef22e1a36124",
+      "DisplayName": "ScheduleJobManager",
+      "ColorIndex": 8
+    },
+    "d1362f41-8b11-4d31-afde-555ead51c071": {
+      "ProjectGuid": "d1362f41-8b11-4d31-afde-555ead51c071",
+      "DisplayName": "NotificationService",
+      "ColorIndex": 9
+    },
+    "d9195b4d-aa1b-4b6f-a0ce-eed20c7636a8": {
+      "ProjectGuid": "d9195b4d-aa1b-4b6f-a0ce-eed20c7636a8",
+      "DisplayName": "HealthChecker.Tests",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 11
 }

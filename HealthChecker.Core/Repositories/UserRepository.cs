@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HealthChecker.Core.Repositories
 {
-    public class UserRepository //: IUserRepository
+    public class UserRepository : IUserRepository
     {
 
         private readonly ApplicationDbContext _context;
@@ -22,10 +22,12 @@ namespace HealthChecker.Core.Repositories
             _context = context;
             _mapper = mapper;
         }
-        public async Task<UserDTO> GetUser(string id)
+
+
+        public async Task<UserDTO> GetUser(string userName)
         {
             var user = await _context.Users.AsNoTracking()
-                                             .Where(u => u.Id == id)
+                                             .Where(u => u.UserName == userName)
                                              .Select(u => _mapper.Map<UserDTO>(u))
                                              .FirstOrDefaultAsync();
 
