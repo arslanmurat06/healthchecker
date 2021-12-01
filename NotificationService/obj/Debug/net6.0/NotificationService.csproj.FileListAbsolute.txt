@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\NotificationService.deps.json
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\NotificationService.dll
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\ref\NotificationService.dll
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\NotificationService.pdb
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\HealthChecker.Contracts.dll
+C:\Users\user\source\repos\HealthChecker\NotificationService\bin\Debug\net6.0\HealthChecker.Contracts.pdb
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.AssemblyInfo.cs
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.csproj.CopyComplete
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.dll
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\ref\NotificationService.dll
+C:\Users\user\source\repos\HealthChecker\NotificationService\obj\Debug\net6.0\NotificationService.pdb

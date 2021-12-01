@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire" Version="1.7.27" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.27" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.27" />
+    <PackageReference Include="Hangfire.Dashboard.Basic.Authentication" Version="5.0.0" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthChecker.Contracts\HealthChecker.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

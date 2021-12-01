@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using HealthChecker.Contracts.DTOs;
 using HealthChecker.Contracts.Interfaces.Repositories;
+using HealthChecker.Contracts.Interfaces.Services;
 using HealthCheckerWeb.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,11 +11,11 @@ namespace HealthCheckerWeb.Controllers
     [Authorize]
     public class JobsController : Controller
     {
-        private readonly IJobsRepository _jobRepository;
+        private readonly IJobService _jobService;
 
-        public JobsController(ILogger<HomeController> logger, IJobsRepository jobRepository)
+        public JobsController(ILogger<HomeController> logger, IJobService jobService)
         {
-            _jobRepository = jobRepository;
+            _jobService = jobService;
         }
 
 
@@ -23,7 +24,7 @@ namespace HealthCheckerWeb.Controllers
 
             var userName = User.Identity.Name;
 
-            var result = await _jobRepository.GetJobs(userName);
+            var result = await _jobService.GetJobs(userName);
             if(result.Success)
                 return View(result.Data);
            
@@ -48,7 +49,7 @@ namespace HealthCheckerWeb.Controllers
             {
                 var userName = User.Identity.Name;
 
-                var result = await _jobRepository.AddJob(job, userName);
+                var result = await _jobService.AddJob(job, userName);
 
                 if (!result.Success)
                 {
@@ -76,7 +77,7 @@ namespace HealthCheckerWeb.Controllers
            
              var userName = User.Identity.Name;
 
-             var result = await _jobRepository.GetJob(id);
+             var result = await _jobService.GetJob(id);
 
             if (!result.Success)
                 return NotFound();
@@ -95,7 +96,7 @@ namespace HealthCheckerWeb.Controllers
            
                 var userName = User.Identity.Name;
 
-                var result = await _jobRepository.UpdateJob(job, userName);
+                var result = await _jobService.UpdateJob(job, userName);
 
             if (!result.Success)
             {
@@ -117,7 +118,7 @@ namespace HealthCheckerWeb.Controllers
         {
             var userName = User.Identity.Name;
 
-            var result = await _jobRepository.GetJob(id);
+            var result = await _jobService.GetJob(id);
 
             if (!result.Success)
                 return NotFound();
@@ -135,7 +136,7 @@ namespace HealthCheckerWeb.Controllers
             
             var userName = User.Identity.Name;
          
-            var result = await _jobRepository.DeleteJob(id, userName);
+            var result = await _jobService.DeleteJob(id, userName);
 
             if (!result.Success)
             {

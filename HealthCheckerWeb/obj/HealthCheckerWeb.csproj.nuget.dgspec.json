@@ -91,6 +91,12 @@
               },
               "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.DataContext\\HealthChecker.DataContext.csproj": {
                 "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.DataContext\\HealthChecker.DataContext.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj"
               }
             }
           }
@@ -251,6 +257,18 @@
               },
               "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.DataContext\\HealthChecker.DataContext.csproj": {
                 "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.DataContext\\HealthChecker.DataContext.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\NotificationService.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\NotificationService.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj"
               }
             }
           }
@@ -316,6 +334,273 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj",
+        "projectName": "HealthLifeCheckService",
+        "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\NotificationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\NotificationService.csproj",
+        "projectName": "NotificationService",
+        "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\NotificationService.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\NotificationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj",
+        "projectName": "ScheduleJobManager",
+        "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\ScheduleJobManager.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\ScheduleJobManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj"
+              },
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthLifeCheckService\\HealthLifeCheckService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj",
+        "projectName": "SchedulerService",
+        "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\SchedulerService.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\SchedulerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj": {
+                "projectPath": "C:\\Users\\user\\source\\repos\\HealthChecker\\HealthChecker.Contracts\\HealthChecker.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.27, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.27, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.27, )"
+            },
+            "Hangfire.Dashboard.Basic.Authentication": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

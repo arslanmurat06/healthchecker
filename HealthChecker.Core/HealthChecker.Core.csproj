@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
@@ -18,6 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\HealthChecker.Contracts\HealthChecker.Contracts.csproj" />
     <ProjectReference Include="..\HealthChecker.DataContext\HealthChecker.DataContext.csproj" />
+    <ProjectReference Include="..\ScheduleJobManager\ScheduleJobManager.csproj" />
+    <ProjectReference Include="..\SchedulerService\SchedulerService.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HealthChecker.Core.Interfaces.Services
+namespace HealthLifeCheckService
 {
-    public class IUserService
+    public interface IHealthCheckService
     {
+        Task<bool> Check(string url);
     }
 }

@@ -11,6 +11,7 @@ using HealthChecker.DataContext.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
+using HealthCheckerWeb.Core.Exceptions;
 
 namespace HealthChecker.Core.Repositories
 {
@@ -25,7 +26,7 @@ namespace HealthChecker.Core.Repositories
             _mapper = mapper;
         }
 
-        public async Task<ResponseDTO<JobDTO>> AddJob(JobDTO job, string userName)
+        public async Task<JobDTO> AddJob(JobDTO job, string userName)
         {
             var jobEntity = _mapper.Map<Job>(job);
 
@@ -42,14 +43,15 @@ namespace HealthChecker.Core.Repositories
 
             if(result > 0)
             {
-                return new ResponseDTO<JobDTO>(_mapper.Map<JobDTO>(jobEntity));
+                return _mapper.Map<JobDTO>(jobEntity);
             }
 
-            return new ResponseDTO<JobDTO>(new List<ErrorDTO>() { new ErrorDTO("Job could not be saved to db ")});
+            throw new CustomException("Job could not be saved to db ");
+
         }
 
 
-        public async Task<ResponseDTO<JobDTO>> UpdateJob(JobDTO job, string userName)
+        public async Task<JobDTO> UpdateJob(JobDTO job, string userName)
         {
 
             var jobEntity = await _context.Jobs.AsNoTracking().FirstAsync(j=>j.Id ==job.Id);
@@ -58,7 +60,7 @@ namespace HealthChecker.Core.Repositories
 
             if (jobEntity == null)
             {
-                return new ResponseDTO<JobDTO>(new List<ErrorDTO>() { new ErrorDTO("Job could not be found to update ") });
+                throw new CustomException("Job could not be found to update ");
             }
 
             jobEntity.Name = job.Name;
@@ -75,14 +77,14 @@ namespace HealthChecker.Core.Repositories
 
             if (result > 0)
             {
-                return new ResponseDTO<JobDTO>(_mapper.Map<JobDTO>(jobEntity));
+                return _mapper.Map<JobDTO>(jobEntity);
             }
 
-            return new ResponseDTO<JobDTO>(new List<ErrorDTO>() { new ErrorDTO("Job could not be updated") });
+            throw new CustomException("Job could not be updated");
         }
 
 
-        public async Task<ResponseDTO<JobDTO>> GetJob(int id)
+        public async Task<JobDTO> GetJob(int id)
         {
             var job = await _context.Jobs.AsNoTracking()
                                              .Where(j => j.Id == id )
@@ -91,14 +93,14 @@ namespace HealthChecker.Core.Repositories
 
             if(job == null)
             {
-                return new ResponseDTO<JobDTO>(new List<ErrorDTO>() { new ErrorDTO($"There is no job found with id - {id}") });
+                throw new CustomException($"There is no job found with id - {id}");
             }
 
-            return  new ResponseDTO<JobDTO>(job);
+            return job;
         }
 
 
-        public async Task<ResponseDTO<List<JobDTO>>> GetJobs(string userName)
+        public async Task<List<JobDTO>> GetJobs(string userName)
         {
 
             var user = await _context.Users.FirstAsync(u => u.UserName == userName);
@@ -109,20 +111,20 @@ namespace HealthChecker.Core.Repositories
                                          .ToListAsync();
             if (!jobs.Any())
             {
-                return new ResponseDTO<List<JobDTO>>(new List<ErrorDTO>() { new ErrorDTO($"No job added yet") });
+                throw new CustomException($"No job added yet");
             }
 
-            return new ResponseDTO<List<JobDTO>>(jobs);
+            return jobs;
         }
 
-        public async Task<ResponseDTO<bool>> DeleteJob(int id, string userName)
+        public async Task<bool> DeleteJob(int id, string userName)
         {
             var user = await _context.Users.FirstAsync(u => u.UserName == userName);
 
             var foundJobEntity = await _context.Jobs.FirstOrDefaultAsync(j=>j.Id == id);
 
             if(foundJobEntity == null)
-                return new ResponseDTO<bool>(new List<ErrorDTO>() { new ErrorDTO( $"Job was not found.") });
+                throw new CustomException($"Job was not found.");
 
             foundJobEntity.Tombstone = DateTime.UtcNow;
             foundJobEntity.LastEditUser = user.UserName;
@@ -132,10 +134,9 @@ namespace HealthChecker.Core.Repositories
             var result = await _context.SaveChangesAsync();
 
             if (result > 0)
-                return new ResponseDTO<bool>(true);
+                return true;
 
-            return new ResponseDTO<bool>(false);
-
+            return false;
         }
     }
 }
