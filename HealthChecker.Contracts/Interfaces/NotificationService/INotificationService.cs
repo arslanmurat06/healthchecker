@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HealthChecker.Contracts.DTOs;
 
 namespace HealthChecker.Contracts.Interfaces.NotificationService
 {
     public interface INotificationService
     {
-        //Task<bool> Notify(User);
-        Task<bool> Notify();
+        Task Notify(UserDTO user, Message message);
     }
 }

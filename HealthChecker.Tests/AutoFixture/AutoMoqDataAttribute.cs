@@ -36,6 +36,7 @@ namespace HealthChecker.Tests.AutoFixture
             fixture.Register(() => new ApplicationDbContext(context.Options));
 
             fixture.Register<IJobsRepository>(fixture.Create<JobsRepository>);
+            fixture.Register<IUserRepository>(fixture.Create<UserRepository>);
 
             fixture.Customize(new AutoMapperCustomization());
             fixture.Customize(new HangFireCustomization());

@@ -23,11 +23,20 @@ namespace HealthChecker.Core.Repositories
             _mapper = mapper;
         }
 
-
-        public async Task<UserDTO> GetUser(string userName)
+        public async Task<UserDTO> GetUserById(string userId)
         {
             var user = await _context.Users.AsNoTracking()
-                                             .Where(u => u.UserName == userName)
+                                              .Where(u => u.Id == userId)
+                                              .Select(u => _mapper.Map<UserDTO>(u))
+                                              .FirstOrDefaultAsync();
+
+            return user;
+        }
+
+        public async Task<UserDTO> GetUserByName(string username)
+        {
+            var user = await _context.Users.AsNoTracking()
+                                             .Where(u => u.UserName == username)
                                              .Select(u => _mapper.Map<UserDTO>(u))
                                              .FirstOrDefaultAsync();
 

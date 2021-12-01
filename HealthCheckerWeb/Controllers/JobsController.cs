@@ -27,9 +27,7 @@ namespace HealthCheckerWeb.Controllers
             var result = await _jobService.GetJobs(userName);
             if(result.Success)
                 return View(result.Data);
-           
 
-            //look at this
             return View();
         }
 
@@ -64,12 +62,8 @@ namespace HealthCheckerWeb.Controllers
 
             return View();
 
-            //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-
-
-        //TODO: Model valid controlü yap
 
         public async Task<IActionResult> Edit(int id)
         {
@@ -108,9 +102,6 @@ namespace HealthCheckerWeb.Controllers
 
             return RedirectToAction("Index");
 
-             
-
-            //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
 
@@ -127,7 +118,6 @@ namespace HealthCheckerWeb.Controllers
         }
 
 
-        //TODO: Model valid controlü yap
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -149,7 +139,6 @@ namespace HealthCheckerWeb.Controllers
 
             return RedirectToAction("Index");
 
-            //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

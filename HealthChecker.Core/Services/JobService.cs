@@ -66,14 +66,14 @@ namespace HealthChecker.Core.Services
 
             var result = await _jobRepository.UpdateJob(job, userName);
 
-            _scheduleManager.UpdateJob(await CreateUniqueJobName(oldJobName, userName), result.Name, result.Id, result.TriggerInterval, result.TriggerType);
+            _scheduleManager.UpdateJob(await CreateUniqueJobName(oldJobName, userName), await CreateUniqueJobName(result.Name, userName), result.Id, result.TriggerInterval, result.TriggerType);
 
             return new ResponseDTO<JobDTO>(result);
         }
 
         private async Task<string> CreateUniqueJobName(string jobName, string userName)
         {
-            var user = await _userRepository.GetUser(userName);
+            var user = await _userRepository.GetUserByName(userName);
 
             return $"{jobName}-{user.Id}";
         }

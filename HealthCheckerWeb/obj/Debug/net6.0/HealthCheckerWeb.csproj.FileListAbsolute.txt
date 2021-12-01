@@ -320,3 +320,7 @@ C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Seril
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\MailKit.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\MimeKit.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\BouncyCastle.Crypto.dll

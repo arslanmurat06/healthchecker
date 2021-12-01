@@ -29,7 +29,7 @@ namespace HealthLifeCheckService
             {
 
                 _logger.LogError($"Error happened while checking the url {url} health.");
-                throw;
+                return await Task.FromResult(false);
             }
 
              _logger.LogInformation($"Health check of {url} is {(checkingResponse.IsSuccessStatusCode ? "Success": "Failed")}");

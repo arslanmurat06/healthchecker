@@ -7,9 +7,11 @@ using HealthChecker.Core.Repositories;
 using HealthChecker.Core.Services;
 using HealthChecker.DataContext;
 using HealthLifeCheckService;
+using MailNotification.Extension;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NotificationService;
+using NotificationService.MailNotification;
 using ScheduleJobManager;
 using SchedulerService;
 using Serilog;
@@ -44,6 +46,7 @@ builder.Services.AddHttpClient<IHealthCheckService, HealthCheckService>(client =
 
 builder.Host.UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration));
 
+builder.Services.UseMailService(builder.Configuration);
 
 var app = builder.Build();
 

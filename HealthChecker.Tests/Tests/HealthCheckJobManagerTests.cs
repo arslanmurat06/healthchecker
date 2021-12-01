@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoFixture.Xunit2;
+using HealthChecker.Contracts.DTOs;
 using HealthChecker.Contracts.Interfaces.NotificationService;
+using HealthChecker.Core.Repositories;
 using HealthChecker.Core.Services;
 using HealthChecker.DataContext;
 using HealthChecker.DataContext.Entities;
@@ -19,34 +21,6 @@ namespace HealthChecker.Tests.Tests
 {
     public class HealthCheckJobManagerTests
     {
-        [Theory]
-        [InlineAutoMoqData("1a2b3c", "Test User")]
-        public async Task Ensure_When_HealthCheck_False_Send_Notify(string userID, string userName, ApplicationDbContext context,
-            JobService service,  [Frozen]Mock<INotificationService> moqNotificationService, [Frozen] Mock<IHealthCheckService> moqHealthCheckService,
-            HealthCheckJobManager sut)
-        {
-            await SeedDataContext(context, userID);
-
-            var user = new IdentityUser { Id = userID, UserName = userName };
-
-            await context.Users.AddAsync(user);
-
-            await context.SaveChangesAsync();
-
-
-            var addedJobResult = await service.GetJobs(userName);
-
-            var addedJob = addedJobResult.Data.First();
-
-            moqHealthCheckService.Setup(s => s.Check(It.IsAny<string>())).ReturnsAsync(false);
-
-            moqNotificationService.Setup(s => s.Notify()).ReturnsAsync(true);
-
-            await sut.Process(addedJob.Id);
-
-            moqNotificationService.Verify(m => m.Notify(), Times.Once());
-        }
-
 
 
         [Theory]
@@ -70,11 +44,11 @@ namespace HealthChecker.Tests.Tests
 
             moqHealthCheckService.Setup(s => s.Check(It.IsAny<string>())).ReturnsAsync(true);
 
-            moqNotificationService.Setup(s => s.Notify()).ReturnsAsync(true);
+            moqNotificationService.Setup(s => s.Notify(It.IsAny<UserDTO>(), It.IsAny<Message>()));
 
             await sut.Process(addedJob.Id);
 
-            moqNotificationService.Verify(m => m.Notify(), Times.Never());
+            moqNotificationService.Verify(m => m.Notify(It.IsAny<UserDTO>(), It.IsAny<Message>()), Times.Never());
         }
 
 

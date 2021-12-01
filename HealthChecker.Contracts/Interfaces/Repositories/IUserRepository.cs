@@ -9,6 +9,7 @@ namespace HealthChecker.Contracts.Interfaces.Repositories
 {
     public interface IUserRepository
     {
-        Task<UserDTO> GetUser(string userName);
+        Task<UserDTO> GetUserByName(string username);
+        Task<UserDTO> GetUserById(string userId);
     }
 }
