@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using NotificationService;
 using ScheduleJobManager;
 using SchedulerService;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,8 @@ builder.Services.AddHttpClient<IHealthCheckService, HealthCheckService>(client =
     client.Timeout = TimeSpan.FromMilliseconds(10000);
 });
 
+
+builder.Host.UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration));
 
 
 var app = builder.Build();

@@ -309,3 +309,14 @@ C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Sched
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\ScheduleJobManager.pdb
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\NotificationService.dll
 C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\NotificationService.pdb
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\bin\Debug\net6.0\Serilog.Sinks.File.dll
