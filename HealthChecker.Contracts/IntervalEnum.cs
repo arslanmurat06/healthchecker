@@ -8,7 +8,6 @@ namespace HealthChecker.Contracts
 {
     public enum IntervalEnum
     {
-        Second ,
         Minute,
         Hour,
         Day,

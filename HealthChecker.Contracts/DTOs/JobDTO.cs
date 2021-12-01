@@ -13,6 +13,7 @@ namespace HealthChecker.Contracts.DTOs
         public string Name { get; set; }
 
         [Required]
+        [Url()]
         [DisplayName("Target URL")]
         public string TargetURL { get; set; }
 
