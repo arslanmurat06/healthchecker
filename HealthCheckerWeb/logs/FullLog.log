@@ -1,0 +1,76 @@
+2021-12-01 22:22:55.034 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-12-01 22:22:57.865 +03:00 [INF] Hangfire SQL objects installed.
+2021-12-01 22:22:57.908 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: (local)@HealthChecker'
+2021-12-01 22:22:57.911 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2021-12-01 22:22:57.911 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:01:00
+2021-12-01 22:22:58.442 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-12-01 22:22:58.782 +03:00 [INF] Server murata-remote:8408:62811d97 successfully announced in 748.7132 ms
+2021-12-01 22:22:58.794 +03:00 [INF] Server murata-remote:8408:62811d97 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-12-01 22:22:58.846 +03:00 [INF] 1 servers were removed due to timeout
+2021-12-01 22:22:59.254 +03:00 [INF] Server murata-remote:8408:62811d97 all the dispatchers started
+2021-12-01 22:22:59.766 +03:00 [INF] Now listening on: https://localhost:7116
+2021-12-01 22:22:59.769 +03:00 [INF] Now listening on: http://localhost:5116
+2021-12-01 22:22:59.771 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-12-01 22:22:59.772 +03:00 [INF] Hosting environment: Development
+2021-12-01 22:22:59.773 +03:00 [INF] Content root path: C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\
+2021-12-01 22:23:02.088 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/ - -
+2021-12-01 22:23:03.328 +03:00 [INF] Executing endpoint 'HealthCheckerWeb.Controllers.HomeController.Index (HealthCheckerWeb)'
+2021-12-01 22:23:03.366 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller HealthCheckerWeb.Controllers.HomeController (HealthCheckerWeb).
+2021-12-01 22:23:03.395 +03:00 [INF] Executing ViewResult, running view Index.
+2021-12-01 22:23:03.643 +03:00 [INF] Executed ViewResult - view Index executed in 259.9748ms.
+2021-12-01 22:23:03.652 +03:00 [INF] Executed action HealthCheckerWeb.Controllers.HomeController.Index (HealthCheckerWeb) in 283.1935ms
+2021-12-01 22:23:03.655 +03:00 [INF] Executed endpoint 'HealthCheckerWeb.Controllers.HomeController.Index (HealthCheckerWeb)'
+2021-12-01 22:23:03.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/ - - - 200 - text/html;+charset=utf-8 1671.0728ms
+2021-12-01 22:23:04.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/css/site.css?v=GmtGFl6c_6ws18fpKN0RDDnygrE4YTlBP2VccDEwL3k - -
+2021-12-01 22:23:04.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/_framework/aspnetcore-browser-refresh.js - -
+2021-12-01 22:23:04.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/HealthCheckerWeb.styles.css?v=KhbmirKr2NNKnsds_NFQ09DwXrQl9F78ITcKeYb-2ZM - -
+2021-12-01 22:23:04.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/_framework/aspnetcore-browser-refresh.js - - - 200 11950 application/javascript;+charset=utf-8 100.7572ms
+2021-12-01 22:23:04.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/images/schedule.jpg - -
+2021-12-01 22:23:04.141 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\wwwroot\css\site.css'
+2021-12-01 22:23:04.209 +03:00 [INF] Sending file. Request path: '/HealthCheckerWeb.styles.css'. Physical path: 'C:\Users\user\source\repos\HealthChecker\HealthCheckerWeb\obj\Debug\net6.0\scopedcss\bundle\HealthCheckerWeb.styles.css'
+2021-12-01 22:23:04.262 +03:00 [INF] The file /images/schedule.jpg was not modified
+2021-12-01 22:23:04.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/css/site.css?v=GmtGFl6c_6ws18fpKN0RDDnygrE4YTlBP2VccDEwL3k - - - 200 214 text/css 237.1059ms
+2021-12-01 22:23:04.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/HealthCheckerWeb.styles.css?v=KhbmirKr2NNKnsds_NFQ09DwXrQl9F78ITcKeYb-2ZM - - - 200 1133 text/css 242.5830ms
+2021-12-01 22:23:04.303 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/images/schedule.jpg - - - 304 - image/jpeg 276.7732ms
+2021-12-01 22:23:04.734 +03:00 [INF] Entity Framework Core 6.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: MigrationsAssembly=HealthCheckerWeb 
+2021-12-01 22:23:06.229 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[Created], [j].[CreatedUser], [j].[LastEdit], [j].[LastEditUser], [j].[LastRunTime], [j].[Name], [j].[TargetURL], [j].[Tombstone], [j].[TriggerInterval], [j].[TriggerType], [j].[UserId]
+FROM [Jobs] AS [j]
+WHERE [j].[Id] = @__id_0
+2021-12-01 22:23:06.299 +03:00 [INF] Start processing HTTP request GET "http://www.google.com/"
+2021-12-01 22:23:06.304 +03:00 [INF] Sending HTTP request GET "http://www.google.com/"
+2021-12-01 22:23:06.972 +03:00 [INF] Received HTTP response headers after 661.2235ms - 200
+2021-12-01 22:23:06.976 +03:00 [INF] End processing HTTP request after 679.2346ms - 200
+2021-12-01 22:23:07.055 +03:00 [INF] Health check of http://www.google.com is Success
+2021-12-01 22:23:07.074 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__job_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [j].[Id], [j].[Created], [j].[CreatedUser], [j].[LastEdit], [j].[LastEditUser], [j].[LastRunTime], [j].[Name], [j].[TargetURL], [j].[Tombstone], [j].[TriggerInterval], [j].[TriggerType], [j].[UserId]
+FROM [Jobs] AS [j]
+WHERE [j].[Id] = @__job_Id_0
+2021-12-01 22:23:07.473 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p11='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Jobs] SET [Created] = @p0, [CreatedUser] = @p1, [LastEdit] = @p2, [LastEditUser] = @p3, [LastRunTime] = @p4, [Name] = @p5, [TargetURL] = @p6, [Tombstone] = @p7, [TriggerInterval] = @p8, [TriggerType] = @p9, [UserId] = @p10
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+2021-12-01 22:23:21.180 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/Jobs - -
+2021-12-01 22:23:21.193 +03:00 [INF] Executing endpoint 'HealthCheckerWeb.Controllers.JobsController.Index (HealthCheckerWeb)'
+2021-12-01 22:23:21.201 +03:00 [INF] Route matched with {action = "Index", controller = "Jobs", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller HealthCheckerWeb.Controllers.JobsController (HealthCheckerWeb).
+2021-12-01 22:23:21.209 +03:00 [INF] Entity Framework Core 6.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: MigrationsAssembly=HealthCheckerWeb 
+2021-12-01 22:23:21.236 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[UserName] = @__userName_0
+2021-12-01 22:23:21.309 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[Created], [j].[CreatedUser], [j].[LastEdit], [j].[LastEditUser], [j].[LastRunTime], [j].[Name], [j].[TargetURL], [j].[Tombstone], [j].[TriggerInterval], [j].[TriggerType], [j].[UserId]
+FROM [Jobs] AS [j]
+WHERE ([j].[UserId] = @__user_Id_0) AND [j].[Tombstone] IS NULL
+2021-12-01 22:23:21.321 +03:00 [INF] Executing ViewResult, running view Index.
+2021-12-01 22:23:21.357 +03:00 [INF] Executed ViewResult - view Index executed in 36.8895ms.
+2021-12-01 22:23:21.359 +03:00 [INF] Executed action HealthCheckerWeb.Controllers.JobsController.Index (HealthCheckerWeb) in 155.1049ms
+2021-12-01 22:23:21.362 +03:00 [INF] Executed endpoint 'HealthCheckerWeb.Controllers.JobsController.Index (HealthCheckerWeb)'
+2021-12-01 22:23:21.370 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/Jobs - - - 200 - text/html;+charset=utf-8 190.3987ms
+2021-12-01 22:23:21.471 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7116/_framework/aspnetcore-browser-refresh.js - -
+2021-12-01 22:23:21.476 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7116/_framework/aspnetcore-browser-refresh.js - - - 200 11950 application/javascript;+charset=utf-8 4.3244ms
