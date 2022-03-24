@@ -16,7 +16,7 @@ Created by using Asp NET MVC Core 6.
 
 ## Test:
 - XUnit (Test Framework)
-- AutoFixture (Mock for dependeny injection)
+- AutoFixture (Mock for dependency injection)
 - Moq
 - EntityFramework Core In Memory
 - HangFire InMemory
